@@ -5,8 +5,9 @@ The Bootmagic feature that only handles jumping into the bootloader. This is gre
 On some keyboards Bootmagic is disabled by default. If this is the case, it must be explicitly enabled in your `rules.mk` with:
 
 ```make
-BOOTMAGIC_ENABLE = yes
+BOOTMAGIC_ENABLE = full
 ```
+You may see yes being used in place of full, and this is okay. However, yes is deprecated, and ideally full (or lite) should be used instead.
 
 Additionally, you may want to specify which key to use. This is especially useful for keyboards that have unusual matrices. To do so, you need to specify the row and column of the key that you want to use. Add these entries to your `config.h` file:
 
